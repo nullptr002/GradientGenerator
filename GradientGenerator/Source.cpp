@@ -8,8 +8,9 @@
 
 int main()
 {
-    sf::RenderWindow window(sf::VideoMode(640, 480), "ImGui + SFML = <3");
+    sf::RenderWindow window(sf::VideoMode(1280, 720), "ImGui + SFML = <3");
     window.setFramerateLimit(60);
+
     ImGui::SFML::Init(window);
 
     sf::CircleShape shape(100.f);
@@ -31,6 +32,8 @@ int main()
         ImGui::Begin("Hello, world!");
         ImGui::Button("Look at this pretty button");
         ImGui::End();
+
+        ImGui::ShowDemoWindow();
 
         window.clear();
         window.draw(shape);

@@ -23,4 +23,6 @@ private:
 	sf::RenderWindow	m_window;
 
 	sf::RectangleShape	m_background;
+
+	Gui m_gui;
 };
